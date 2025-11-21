@@ -2,31 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f8fff8;
-    color: #2d4d2a;
+    background: var(--bg);
+    color: var(--green-dark);
 }
 
 .header {
+    background: white;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow);
 }
 
 .logo {
-    color: #3ba55d;
-}
-
-.header a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #2d4d2a;
-    font-weight: 500;
+    color: var(--green-primary);
 }
 
 .hero {
@@ -34,11 +26,8 @@ body {
     padding: 80px 20px;
 }
 
-.btn {
-    display: inline-block;
-    background: #3ba55d;
-    padding: 12px 25px;
-    margin-top: 20px;
-    color: white;
-    border-radius: 6px;
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
