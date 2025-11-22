@@ -94,7 +94,4 @@ Reina completed:
 ## ✔ Milestone 1 — STATUS: COMPLETED (Front-End)
 Backend will be added by Razane in Milestone 2.
 
----
 
-## 📌 Notes
-Following best UI/UX practices and teacher requirements.
