@@ -1,11 +1,11 @@
-# 🌿 GreenHome — Smart Plant Management (Milestone 1)
+# GreenHome — Smart Plant Management (Milestone 1)
 
 **Front-End by:** Reina  
 **Back-End by:** Razane
 
 ---
 
-## 🌱 Project Description
+## Project Description
 GreenHome is a smart and user-friendly web application that helps users manage their indoor and outdoor plants.  
 Users can track plants, organize categories, search, contact support, and view a basic dashboard.
 
@@ -13,7 +13,7 @@ Milestone 1 focuses on **front-end**, **UI/UX**, **design system**, and **GitHub
 
 ---
 
-## 🌿 Milestone 1 Deliverables (Reina)
+## Milestone 1 Deliverables (Reina)
 ✔ Full folder structure  
 ✔ All HTML screens  
 ✔ Design System (styleguide.css)  
@@ -60,15 +60,14 @@ GreenHome/
 
 ---
 
-## 🧪 How to Run the Project
+## How to Run the Project
 1. Download or clone the repository  
 2. Open **index.html** in your browser  
 3. No backend or server required for Milestone 1  
 
 ---
 
-## 🔀 GitHub Workflow (Reina)
-## 🔀 GitHub Workflow (Reina)
+## GitHub Workflow (Reina)
 **Branch used:** `reina-ui`
 
 Reina completed:
@@ -82,7 +81,7 @@ Reina completed:
 
 ---
 
-## ♿ Accessibility Features
+## Accessibility Features
 - `alt` text on all images  
 - WCAG AA color contrast  
 - ARIA labels where needed  
@@ -93,8 +92,3 @@ Reina completed:
 
 ## ✔ Milestone 1 — STATUS: COMPLETED (Front-End)
 Backend will be added by Razane in Milestone 2.
-
----
-
-## 📌 Notes
-Following best UI/UX practices and teacher requirements.
