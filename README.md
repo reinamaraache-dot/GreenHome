@@ -90,7 +90,30 @@ Reina completed:
 
 ---
 
-## ✔ Milestone 1 — STATUS: COMPLETED (Front-End)
-Backend will be added by Razane in Milestone 2.
+• Milestone 2 Deliverables (Razane: Backend & Database)
+
+This milestone introduces the core PHP MVC architecture, database integration, and SQL schema setup.
+
+• Razane's Completed Tasks:
+* MVC Architecture: Full separation of logic (Controllers/Models) and presentation (Views).
+* Database Integration: Successful connection to `greenhomedb` via `config/db.php`.
+* Data Display: Dynamic rendering of plant data from the database on the Home Page (`home.php`).
+* Folder Structure: Updated to reflect MVC standards (`app/`, `config/`, `public/`).
+* SQL Deliverables: Successful creation and application of `greenhome.sql` and `constraints.sql`.
+
+---
+
+• How to Run the Project (Updated Instructions)
+
+To run the project after this milestone, you must use a PHP server:
+
+1.  **Database Setup:**
+    * Create a database named `greenhomedb` in phpMyAdmin.
+    * Import the SQL schema from `database/greenhome.sql`.
+    * Import the foreign key constraints from `database/constraints.sql`.
+2.  **Start PHP Server:**
+    * Open your project directory in the terminal (MINGW64).
+    * Run the command: `php -S localhost:3000 -t public`
+3.  **Access:** Open your browser to `http://localhost:3000/`.
 
 
