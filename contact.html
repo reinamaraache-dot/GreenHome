@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – GreenHome</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styleguide.css">
 </head>
 <body>
 
 <header class="header">
-    <h1 class="logo">Contact Us</h1>
+    <h1 class="logo">GreenHome</h1>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="plants.html">Plants</a>
+        <a href="categories.html">Categories</a>
+        <a href="search.html">Search</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
 </header>
 
 <section class="container">
-    <h2 class="page-title">Send a Message</h2>
+    <h2 class="page-title">Get in Touch</h2>
+    <p class="page-subtitle">Have questions or suggestions? Send us a message!</p>
 
-    <form class="form">
-        <input type="text" class="input" placeholder="Your name" required>
-        <input type="email" class="input" placeholder="Your email" required>
-        <textarea class="input" placeholder="Your message" required></textarea>
+    <form class="form contact-form">
+        <label for="name">Name</label>
+        <input type="text" class="input" id="name" placeholder="Your name" required>
 
-        <button class="btn primary">Send</button>
+        <label for="email">Email</label>
+        <input type="email" class="input" id="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea class="input" id="message" placeholder="Your message" rows="5" required></textarea>
+
+        <button class="btn primary" type="submit">Send Message</button>
     </form>
 </section>
 
+<footer class="footer">
+    <p>© 2025 GreenHome — Smart Plant Management</p>
+</footer>
+
 <script src="js/contact.js"></script>
+<script src="js/ui.js"></script>
 </body>
 </html>

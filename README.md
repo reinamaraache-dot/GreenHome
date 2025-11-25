@@ -1,100 +1,43 @@
-# 🌿 GreenHome — Smart Plant Management (Milestone 1)
+#  GreenHome: Smart Plant Management Application
 
-**Front-End by:** Reina  
-**Back-End by:** Razane
+This repository contains the source code for the **GreenHome** web application, a project designed to simulate a real-world development environment by integrating multiple web technologies (HTML, CSS, JavaScript, PHP, and MySQL).
 
----
+GreenHome is a user-friendly platform that helps users manage and care for their indoor and outdoor plants by tracking watering schedules, categories, and maintenance notes.
 
-## 🌱 Project Description
-GreenHome is a smart and user-friendly web application that helps users manage their indoor and outdoor plants.  
-Users can track plants, organize categories, search, contact support, and view a basic dashboard.
+##  Project Objectives & Technology Stack
 
-Milestone 1 focuses on **front-end**, **UI/UX**, **design system**, and **GitHub workflow**.
+**Primary Goal:** To deliver a functional, responsive, and secure web application managing plant data using the MVC architecture.
 
----
+### Technologies Used
 
-## 🌿 Milestone 1 Deliverables (Reina)
-✔ Full folder structure  
-✔ All HTML screens  
-✔ Design System (styleguide.css)  
-✔ Components (components.css)  
-✔ Layout system (layout.css)  
-✔ Base styling (style.css)  
-✔ UI interactions (ui.js)  
-✔ Search interaction (search.js)  
-✔ Contact interaction (contact.js)  
-✔ Zero JavaScript console errors  
-✔ Accessibility (alt text, contrast, ARIA)  
-✔ WORKLOG.md  
+| Component | Technology | Responsibility |
+| :--- | :--- | :--- |
+| **Front-End** | HTML5, CSS3, JavaScript | Responsive Design (Reina) |
+| **Styling** | Custom CSS, CSS Variables | Design System and Components (Reina) |
+| **Back-End** | PHP (Planned) | MVC Architecture, Business Logic (Razane) |
+| **Database** | MySQL (Planned) | Data Storage and Relationships (Razane) |
+| **Integration** | RESTful Web Services (Planned) | Weather & Watering APIs (Razane) |
 
----
+##  Team & Responsibilities
 
-## 📁 Folder Structure (Front-End Completed)
-GreenHome/
-│
-├── index.html
-├── plants.html
-├── categories.html
-├── search.html
-├── contact.html
-├── dashboard.html
-│
-├── css/
-│ ├── style.css
-│ ├── components.css
-│ ├── layout.css
-│ └── styleguide.css
-│
-├── js/
-│ ├── script.js
-│ ├── ui.js
-│ ├── search.js
-│ └── contact.js
-│
-├── assets/
-│ ├── images/
-│ └── icons/
-│
-├── WORKLOG.md
-└── README.md
+| Role | Name | Content Area Focus | GitHub Branch |
+| :--- | :--- | :--- | :--- |
+| **Front-End Lead** | Reina | UI/UX, Component Design, Accessibility | `reina-frontend` |
+| **Back-End Lead** | Razane | PHP Logic, Database Schema, API Integration | `razane-backend` |
 
----
+##  Project Milestones (Completed & Upcoming)
 
-## 🧪 How to Run the Project
-1. Download or clone the repository  
-2. Open **index.html** in your browser  
-3. No backend or server required for Milestone 1  
+### Milestone 1: Front-End & Static UI (Completed)
 
----
+* **Status:** **100% Complete** (HTML, CSS, and placeholder JS deployed to `main` branch).
+* **Deliverables:** Static views for Home, Plants, Categories, Login, Registration, Contact, Search, and Watering Schedule.
+* **Key Feature:** Client-side form validation (`contact.js`) and local storage simulation for watering tracking (`watering.js`).
 
-## 🔀 GitHub Workflow (Reina)
-## 🔀 GitHub Workflow (Reina)
-**Branch used:** `reina-ui`
+### Milestone 2: Database & MVC Foundation (Next Focus)
 
-Reina completed:
-- Folder structure  
-- HTML pages  
-- CSS files  
-- JS files  
-- Accessibility  
-- Commit history with multiple features  
-- Pull Request to merge into main  
-
----
-
-## ♿ Accessibility Features
-- `alt` text on all images  
-- WCAG AA color contrast  
-- ARIA labels where needed  
-- Keyboard-friendly navigation  
-- Zero JavaScript console errors  
-
----
-
-## ✔ Milestone 1 — STATUS: COMPLETED (Front-End)
-Backend will be added by Razane in Milestone 2.
-
----
-
-## 📌 Notes
-Following best UI/UX practices and teacher requirements.
+* **Status:** **In Progress**
+* **Deliverables:**
+    * Full MySQL schema (`greenhome.sql`).
+    * Required SQL constraints and Foreign Keys (`constraints.sql`).
+    * Basic PHP connection and initial MVC file structure (`connect.php`, `controllers/`, `models/`).
+    * Integration of **Registration** and **Login** with the MySQL database.
