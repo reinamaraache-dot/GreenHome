@@ -30,6 +30,36 @@
     </div>
 </section>
 
+<section class="plants-showcase container">
+    <h2 class="section-title">Latest Arrivals</h2>
+    <div class="card-grid">
+
+        <?php 
+        if (!empty($plants)):
+            foreach ($plants as $plant):
+        ?>
+        
+        <div class="card plant-item">
+        <img src="assets/images/<?= htmlspecialchars($plant['image']) ?>" alt="<?= htmlspecialchars($plant['name']) ?>" class="card-img">
+
+            <div class="card-content">
+                <h3 class="card-title"><?= htmlspecialchars($plant['name']) ?></h3>
+                <p class="card-subtitle"><?= htmlspecialchars($plant['category_name']) ?></p>
+                <a href="#" class="btn secondary">View Details</a>
+            </div>
+        </div>
+        
+        <?php 
+            endforeach; 
+        else: 
+        ?>
+        
+        <p>No plants found yet. Add some data to the database!</p>
+
+        <?php endif; ?>
+        </div>
+</section>
+
 <footer class="footer">
     <p>© 2025 GreenHome — Smart Plant Management</p>
 </footer>
