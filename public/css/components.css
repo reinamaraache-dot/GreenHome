@@ -1,37 +1,38 @@
-.btn { 
-    padding: 10px 20px; 
-    border-radius: var(--radius); 
-    text-decoration: none; 
-    display: inline-block; 
-    cursor:pointer; 
+.btn {
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    display: inline-block;
+    cursor:pointer;
     transition: background 0.2s, transform 0.2s;
 }
 
-.btn.primary { 
-    background: var(--green-primary); 
-    color: var(--white); 
+.btn.primary {
+    background: var(--green-primary);
+    color: var(--white);
 }
+
 .btn:hover {
     transform: translateY(-2px);
 }
 
-.input { 
-    width:100%; 
-    padding:12px; 
-    border:1px solid #ccc; 
-    border-radius: var(--radius); 
-    margin-bottom:10px; 
+.input {
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius: var(--radius);
+    margin-bottom:10px;
 }
 
 /* Standard Product Card Styling (for all view files) */
-.card { 
-    background:white; 
-    padding:20px; 
-    border-radius:var(--radius); 
-    box-shadow:var(--shadow); 
-    display:flex; 
-    flex-direction:column; 
-    gap:10px; 
+.card {
+    background:white;
+    padding:20px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
 }
 
 .card-img {
@@ -40,55 +41,54 @@
     border-radius: var(--radius);
     display: block;
     object-fit: contain;    /* Show the whole image inside the card without cropping */
-    background-color: #f8fff8; /*  prevents empty areas from looking weird */
+    background-color: #f8fff8; /* optional, prevents empty areas from looking weird */
 }
 
-
-.category-tile { 
-    display:block; 
-    padding:35px 20px; 
-    text-align:center; 
-    text-decoration:none; 
-    position:relative; 
+.category-tile {
+    display:block;
+    padding:35px 20px;
+    text-align:center;
+    text-decoration:none;
+    position:relative;
     z-index:1;
-    background: linear-gradient(145deg,#e8f5e9,#dcedc8); 
-    color:#006400; 
-    border:1px solid #c8e6c9; 
-    border-radius:12px; 
+    background: linear-gradient(145deg,#e8f5e9,#dcedc8);
+    color:#006400;
+    border:1px solid #c8e6c9;
+    border-radius:12px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition: background 0.3s ease-in-out, transform 0.2s, box-shadow 0.3s; 
-    font-size:1.05rem; 
+    transition: background 0.3s ease-in-out, transform 0.2s, box-shadow 0.3s;
+    font-size:1.05rem;
     font-weight:700;
 }
 
-.category-tile:hover { 
-    background: linear-gradient(145deg,#dcedc8,#c8e6c9); 
-    transform: translateY(-5px); 
-    box-shadow:0 8px 15px rgba(0,0,0,0.2); 
+.category-tile:hover {
+    background: linear-gradient(145deg,#dcedc8,#c8e6c9);
+    transform: translateY(-5px);
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
 }
 
-.category-list { 
-    list-style:none; 
-    padding:0; 
-    margin-top:30px; 
+.category-list {
+    list-style:none;
+    padding:0;
+    margin-top:30px;
 }
 
-.category-item { 
-    display:block; 
-    background:white; 
-    padding:15px 20px; 
-    margin-bottom:12px; 
-    border-radius:var(--radius); 
-    text-decoration:none; 
-    color:var(--green-dark); 
-    box-shadow:var(--shadow); 
-    font-weight:600; 
+.category-item {
+    display:block;
+    background:white;
+    padding:15px 20px;
+    margin-bottom:12px;
+    border-radius:var(--radius);
+    text-decoration:none;
+    color:var(--green-dark);
+    box-shadow:var(--shadow);
+    font-weight:600;
 }
 
-.category-item:hover { 
-    background:var(--green-primary); 
-    color:white; 
-    transform:scale(1.02); 
+.category-item:hover {
+    background:var(--green-primary);
+    color:white;
+    transform:scale(1.02);
 }
 
 /* Search Results Specific Styling */
@@ -100,6 +100,7 @@
     flex-direction: column;
     gap: 15px;
 }
+
 .search-results .card {
     padding: 10px;
     align-items: flex-start;
@@ -107,14 +108,15 @@
     gap: 15px;
 }
 
-
+/* Updated Selector for specificity on search card images */
 .search-results .card img {
-    height: 80px; 
-    width: 80px; 
-    object-fit: cover; 
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
     border-radius: var(--radius);
     flex-shrink: 0; /* Prevents image from shrinking */
 }
+
 .search-results {
     list-style: none;
     padding: 0;

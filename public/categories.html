@@ -4,47 +4,55 @@
     <meta charset="UTF-8">
     <title>Categories – GreenHome</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
+    <header class="header">
+        <h1 class="logo">GreenHome</h1>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="plants.html">Plants</a>
+            <a href="categories.html">Categories</a>
+            <a href="search.html">Search</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
 
-<header class="header">
-    <h1 class="logo">GreenHome</h1>
-</header>
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Explore Our Jungle</h2>
+        </div>
+    </section>
 
-<section class="container">
-    <h2 class="page-title">Explore Our Jungle</h2>
-    <div class="category-grid">
+    <section class="container">
+        <div class="card-grid">
+            <a href="indoor_plants.html" class="category-tile" aria-label="Indoor Plants">
+                <div class="tile-icon">🌿</div>
+                <span class="tile-title">Indoor Plants</span>
+                <span class="tile-desc">Perfect for your living room</span>
+            </a>
+            <a href="outdoor_plants.html" class="category-tile" aria-label="Outdoor Plants">
+                <div class="tile-icon">🌲</div>
+                <span class="tile-title">Outdoor Plants</span>
+                <span class="tile-desc">Beautify your garden</span>
+            </a>
+            <a href="herbs.html" class="category-tile" aria-label="Herbs & Succulents">
+                <div class="tile-icon">🌵</div>
+                <span class="tile-title">Herbs & Succulents</span>
+                <span class="tile-desc">Low maintenance & aromatic</span>
+            </a>
+            <a href="flowering_plants.html" class="category-tile" aria-label="Flowering Plants">
+                <div class="tile-icon">🌸</div>
+                <span class="tile-title">Flowering Plants</span>
+                <span class="tile-desc">Add color to your life</span>
+            </a>
+        </div>
+    </section>
 
-        <!-- INDOOR -->
-        <a href="indoor_plants.html" class="category-tile tile-indoor">
-            <div class="tile-icon">🌿</div>
-            <span class="tile-title">Indoor Plants</span>
-            <span class="tile-desc">Perfect for your living room</span>
-        </a>
-
-        <!-- OUTDOOR -->
-        <a href="outdoor_plants.html" class="category-tile tile-outdoor">
-            <div class="tile-icon">🌲</div>
-            <span class="tile-title">Outdoor Plants</span>
-            <span class="tile-desc">Beautify your garden</span>
-        </a>
-
-        <!-- SUCCULENTS / HERBS -->
-        <a href="herbs.html" class="category-tile tile-succulents">
-            <div class="tile-icon">🌵</div>
-            <span class="tile-title">Herbs & Succulents</span>
-            <span class="tile-desc">Low maintenance & aromatic</span>
-        </a>
-
-        <!-- FLOWERING -->
-        <a href="flowering_plants.html" class="category-tile tile-flowering">
-            <div class="tile-icon">🌸</div>
-            <span class="tile-title">Flowering Plants</span>
-            <span class="tile-desc">Add color to your life</span>
-        </a>
-    </div>
-</section>
-
-<script src="js/ui.js"></script>
+    <footer class="footer">
+        <p>© 2025 GreenHome — Smart Plant Management</p>
+    </footer>
 </body>
 </html>

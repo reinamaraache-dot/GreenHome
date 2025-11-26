@@ -1,28 +1,38 @@
 // watering.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
+        // This assumes the plant name is in the h3 element of the card.
         const plantId = card.querySelector("h3").textContent.replace(/\s+/g, "-").toLowerCase();
 
-        // Load saved data from localStorage
+        
         const savedData = JSON.parse(localStorage.getItem(plantId));
         if (savedData) {
-            card.querySelector(`#last-water-${plantId}`).value = savedData.lastWatered;
-            card.querySelector(`#next-water-${plantId}`).value = savedData.nextWatering;
-            card.querySelector(`#notes-${plantId}`).value = savedData.notes;
+            
+            // The template literals below assume inputs have IDs like id="last-water-aloe-vera"
+            if (card.querySelector(`#last-water-${plantId}`)) {
+                card.querySelector(`#last-water-${plantId}`).value = savedData.lastWatered;
+            }
+            if (card.querySelector(`#next-water-${plantId}`)) {
+                card.querySelector(`#next-water-${plantId}`).value = savedData.nextWatering;
+            }
+            if (card.querySelector(`#notes-${plantId}`)) {
+                card.querySelector(`#notes-${plantId}`).value = savedData.notes;
+            }
         }
 
-        // Add change listeners to inputs
+        
         const lastWater = card.querySelector(`#last-water-${plantId}`);
         const nextWater = card.querySelector(`#next-water-${plantId}`);
         const notes = card.querySelector(`#notes-${plantId}`);
 
         [lastWater, nextWater, notes].forEach(input => {
-            input.addEventListener("change", () => {
-                savePlantData(plantId, lastWater.value, nextWater.value, notes.value, card);
-            });
+            if (input) {
+                input.addEventListener("change", () => {
+                    savePlantData(plantId, lastWater.value, nextWater.value, notes.value, card);
+                });
+            }
         });
     });
 
