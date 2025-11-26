@@ -5,15 +5,17 @@
     --white: #ffffff;
     --gray: #777;
     --bg: #f8fff8;
-
+    
     --space-xs: 4px;
     --space-s: 8px;
     --space-m: 16px;
     --space-l: 32px;
     --space-xl: 48px;
-
+    
     --radius: 8px;
     --shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-body { font-family: "Poppins", sans-serif; }
+body {
+    font-family: "Poppins", sans-serif;
+}
