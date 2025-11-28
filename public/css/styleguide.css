@@ -19,3 +19,11 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+
+.nav a.nav-active {
+    font-weight: 700; 
+    color: var(--green-dark); 
+    border-bottom: 2px solid var(--green-dark); 
+    padding-bottom: 2px;
+}

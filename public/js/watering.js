@@ -1,16 +1,16 @@
-// watering.js
+
 document.addEventListener("DOMContentLoaded", () => {
     const cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
-        // This assumes the plant name is in the h3 element of the card.
+       
         const plantId = card.querySelector("h3").textContent.replace(/\s+/g, "-").toLowerCase();
 
         
         const savedData = JSON.parse(localStorage.getItem(plantId));
         if (savedData) {
             
-            // The template literals below assume inputs have IDs like id="last-water-aloe-vera"
+           
             if (card.querySelector(`#last-water-${plantId}`)) {
                 card.querySelector(`#last-water-${plantId}`).value = savedData.lastWatered;
             }

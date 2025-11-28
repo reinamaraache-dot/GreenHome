@@ -16,6 +16,17 @@ body {
     justify-content:space-between;
     align-items:center;
     box-shadow:var(--shadow);
+    
+    transition: all 0.3s ease;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header.scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    padding: 15px 20px;
 }
 
 .logo {
