@@ -1,43 +1,86 @@
-#  GreenHome: Smart Plant Management Application
+* GreenHome: Smart Plant Management Application
 
-This repository contains the source code for the **GreenHome** web application, a project designed to simulate a real-world development environment by integrating multiple web technologies (HTML, CSS, JavaScript, PHP, and MySQL).
+GreenHome is a full web application built using HTML, CSS, JavaScript, PHP, and MySQL, following the structure and requirements of the Web Programming course.
+It provides a clean interface for browsing plants, categories, searching, contacting support, and managing plant care.
 
-GreenHome is a user-friendly platform that helps users manage and care for their indoor and outdoor plants by tracking watering schedules, categories, and maintenance notes.
+The project follows the MVC architecture and includes both front-end and back-end modules.
 
-##  Project Objectives & Technology Stack
+* Technology Stack
+Layer	Technologies	Developer
+Front-End	HTML5, CSS3, JavaScript	Reina
+Styling System	CSS components, layout system, styleguide	Reina
+Back-End	PHP (MVC: Controllers, Models, Views)	Razane
+Database	MySQL + Constraints + ERD	Razane
+Integrations	Weather API, Watering API	Razane
 
-**Primary Goal:** To deliver a functional, responsive, and secure web application managing plant data using the MVC architecture.
+* Team & Responsibilities:
 
-### Technologies Used
+**Reina — Front-End Developer + UI/UX Designer
 
-| Component | Technology | Responsibility |
-| :--- | :--- | :--- |
-| **Front-End** | HTML5, CSS3, JavaScript | Responsive Design (Reina) |
-| **Styling** | Custom CSS, CSS Variables | Design System and Components (Reina) |
-| **Back-End** | PHP (Planned) | MVC Architecture, Business Logic (Razane) |
-| **Database** | MySQL (Planned) | Data Storage and Relationships (Razane) |
-| **Integration** | RESTful Web Services (Planned) | Weather & Watering APIs (Razane) |
+Completed Responsibilities:
 
-##  Team & Responsibilities
+All HTML pages
 
-| Role | Name | Content Area Focus | GitHub Branch |
-| :--- | :--- | :--- | :--- |
-| **Front-End Lead** | Reina | UI/UX, Component Design, Accessibility | `reina-frontend` |
-| **Back-End Lead** | Razane | PHP Logic, Database Schema, API Integration | `razane-backend` |
+All CSS files (style.css, layout.css, components.css, styleguide.css)
 
-##  Project Milestones (Completed & Upcoming)
+All front-end JavaScript (UI behaviors, interactions, validation, search front-end)
 
-### Milestone 1: Front-End & Static UI (Completed)
+Full Responsive Design
 
-* **Status:** **100% Complete** (HTML, CSS, and placeholder JS deployed to `main` branch).
-* **Deliverables:** Static views for Home, Plants, Categories, Login, Registration, Contact, Search, and Watering Schedule.
-* **Key Feature:** Client-side form validation (`contact.js`) and local storage simulation for watering tracking (`watering.js`).
+Full UI/UX system (colors, spacing, components, grid, typography)
 
-### Milestone 2: Database & MVC Foundation (Next Focus)
+Accessibility implementation (alt text, contrast, ARIA)
 
-* **Status:** **In Progress**
-* **Deliverables:**
-    * Full MySQL schema (`greenhome.sql`).
-    * Required SQL constraints and Foreign Keys (`constraints.sql`).
-    * Basic PHP connection and initial MVC file structure (`connect.php`, `controllers/`, `models/`).
-    * Integration of **Registration** and **Login** with the MySQL database.
+Ensuring no console errors
+
+Complete front-end for:
+Home, Plants, Categories, Search, Contact, Login, Register, Dashboard, Indoor/Outdoor/Herbs/Flowering pages
+
+-> Reina completed the entire Front-End layer of the project.
+
+** Razane — Back-End Developer + Database Engineer
+
+Completed Responsibilities:
+
+Full MVC backend (controllers, models, views)
+
+PHP logic for:
+
+Registration
+
+Login
+
+Search
+
+Admin dashboard
+
+Contact form
+
+Database schema (greenhome.sql)
+
+Constraints + Foreign Keys (constraints.sql)
+
+ERD design
+
+API integrations:
+
+Weather API
+
+Watering API
+
+Backend validation + sanitization
+
+-> Razane completed the entire Back-End, Database, and Integration layer.
+
+
+* How to Run the Project
+
+Import greenhome.sql and constraints.sql into MySQL
+
+Update database credentials in php/connect.php
+
+Place the project folder in XAMPP/htdocs/
+
+Run:
+
+http://localhost/GreenHome/

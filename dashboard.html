@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard – GreenHome</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/components.css">
+    <link rel="stylesheet" href="public/css/layout.css">
+    <link rel="stylesheet" href="public/css/styleguide.css">
 </head>
 <body>
 
@@ -26,21 +26,37 @@
     <h2 class="page-title">Dashboard Overview</h2>
 
     <div class="dashboard-grid" id="dashboard-stats">
-        <!-- JS will populate stats dynamically -->
-    </div>
+        
+        <div class="dashboard-card">
+            <h4>Total Plants</h4>
+            <p>0</p>
+        </div>
 
+        <div class="dashboard-card">
+            <h4>Categories</h4>
+            <p>0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h4>Watering Tasks</h4>
+            <p>0</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h4>Weather API Status</h4>
+            <p>Checking...</p>
+        </div>
+    </div>
     <section class="container">
         <h3>All Plants</h3>
         <div class="card-grid" id="plants-list">
-            <!-- JS will populate all plants dynamically -->
-        </div>
+            </div>
     </section>
 
     <section class="container">
         <h3>Watering Schedules</h3>
         <div class="card-grid" id="watering-list">
-            <!-- JS will populate all watering schedules dynamically -->
-        </div>
+            </div>
     </section>
 </section>
 
@@ -48,6 +64,6 @@
     <p>© 2025 GreenHome — Smart Plant Management</p>
 </footer>
 
-<script src="js/dashboard.js"></script>
+<script src="public/js/dashboard.js"></script>
 </body>
 </html>
