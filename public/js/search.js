@@ -4,20 +4,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 1. Plant list (name + page)
     const plants = [
+        // Indoor Plants
         { name: "Epipremnum Aureum", page: "indoor_plants.html" },
-        { name: "Aloe Vera", page: "indoor_plants.html" },
         { name: "Monstera Deliciosa", page: "indoor_plants.html" },
         { name: "Snake Plant", page: "indoor_plants.html" },
         { name: "ZZ Plant", page: "indoor_plants.html" },
-
         { name: "Peace Lily", page: "flowering_plants.html" },
+
+        // Flowering Plants
         { name: "Hibiscus", page: "flowering_plants.html" },
         { name: "Orchid", page: "flowering_plants.html" },
 
-        { name: "Lavender", page: "outdoor_plants.html" },
+        // Outdoor Plants
         { name: "Bougainvillea", page: "outdoor_plants.html" },
+        
+        // Herbs & Succulents 
+        { name: "Lavender", page: "herbs.html" },
         { name: "Rosemary", page: "herbs.html" },
-        { name: "Panda Plant", page: "plants.html" }
+        { name: "Aloe Vera", page: "herbs.html" }, 
+        { name: "Panda Plant", page: "herbs.html" } 
     ];
 
     // 2. Handle search typing

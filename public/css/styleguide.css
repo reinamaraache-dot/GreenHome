@@ -20,10 +20,43 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/*  Smooth transition for hover effects */
+.nav a {
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
 
 .nav a.nav-active {
     font-weight: 700; 
     color: var(--green-dark); 
     border-bottom: 2px solid var(--green-dark); 
     padding-bottom: 2px;
+}
+/*  Styles for form validation */
+.input.error {
+    border-color: #e74c3c !important; /* Red border for invalid input */
+}
+
+/* Base styles for feedback messages */
+.message-box {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.95rem;
+    opacity: 0; /* Starts hidden */
+    transition: opacity 0.4s ease-in-out;
+}
+
+.message-error {
+    background: #fbe6e4;
+    color: #c0392b;
+}
+
+.message-success {
+    background: var(--green-light);
+    color: var(--green-dark);
+}
+
+.message-visible {
+    opacity: 1; /* Shows the message */
 }
