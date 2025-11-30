@@ -25,13 +25,16 @@ All CSS files (style.css, layout.css, components.css, styleguide.css)
 
 All front-end JavaScript (UI behaviors, interactions, validation, search front-end)
 
-Full Responsive Design
+Full Responsive Design + Testing Documentation.
+
+UI/UX Polishing: Implemented required Micro-animations (smooth transitions for buttons/cards/menu, input focus) and developed JavaScript functions for inline Error states and Success states (eliminating alert())
 
 Full UI/UX system (colors, spacing, components, grid, typography)
 
 Accessibility implementation (alt text, contrast, ARIA)
 
 Ensuring no console errors
+
 
 Complete front-end for:
 Home, Plants, Categories, Search, Contact, Login, Register, Dashboard, Indoor/Outdoor/Herbs/Flowering pages
@@ -72,6 +75,14 @@ Backend validation + sanitization
 
 -> Razane completed the entire Back-End, Database, and Integration layer.
 
+Responsiveness Verification(Reina)
+The design has been verified across key breakpoints using Chrome Developer Tools:
+
+Mobile Width (375px - 425px): All card-grid and dashboard-grid layouts correctly reflow to single-column or two-column displays. Header navigation stack is stable.
+
+Tablet Width (768px - 1024px): Grid layouts correctly show 2-3 columns. Text and images are legible.
+
+Desktop Width (1000px+): Layout maintains the intended design with a max-width: 1000px container.
 
 * How to Run the Project
 

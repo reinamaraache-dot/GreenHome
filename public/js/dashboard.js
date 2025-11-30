@@ -2,24 +2,37 @@
 const categories = [
     { name: "Indoor Plants", image: "public/assets/images/indoor_category.jpg" },
     { name: "Outdoor Plants", image: "public/assets/images/outdoor_category.jpg" },
-    { name: "Succulents", image: "public/assets/images/succulents_category.jpg" },
+    
+    { name: "Herbs & Succulents", image: "public/assets/images/herbs_succulents_category.jpg" }, 
     { name: "Flowering Plants", image: "public/assets/images/flowering_category.jpg" }
 ];
 
 // Define your plants 
 const plants = [
-    { name: "Aloe Vera", type: "Succulent", image: "public/assets/images/aloe_vera.avif", watering: "Every 7 days" },
-    { name: "Monstera Deliciosa", type: "Indoor", image: "public/assets/images/monstera_deliciosa.jpg", watering: "Every 5 days" },
-    { name: "Snake Plant", type: "Indoor", image: "public/assets/images/snake_plant.webp", watering: "Every 10 days" },
-    { name: "Epipremnum Aureum", type: "Indoor", image: "public/assets/images/epipremnum_aureum.jpg", watering: "Every 5 days" },
-    { name: "Orchid", type: "Flowering", image: "public/assets/images/orchid.jpeg", watering: "Every 6 days" },
-    { name: "Lavender", type: "Herb", image: "public/assets/images/lavender.jpg", watering: "Every 4 days" },
-    { name: "Hibiscus", type: "Flowering", image: "public/assets/images/hibiscus.webp", watering: "Every 3 days" },
-    { name: "Peace Lily", type: "Indoor", image: "public/assets/images/peace_lily.jpg", watering: "Every 4 days" },
-    { name: "Rosemary", type: "Herb", image: "public/assets/images/rosemary.avif", watering: "Every 2 days" },
-    { name: "Panda Plant", type: "Succulent", image: "public/assets/images/panda_plant.png", watering: "Every 10 days" },
-    { name: "ZZ Plant", type: "Indoor", image: "public/assets/images/zz_plant.jpg", watering: "Every 14 days" },
-    { name: "Bougainvillea", type: "Outdoor", image: "public/assets/images/bougainvillea.webp", watering: "Every 3 days" }
+    
+    { name: "Aloe Vera", type: "Herbs & Succulents", image: "public/assets/images/aloe_vera.avif", watering: "Every 7 days" },
+    
+    { name: "Monstera Deliciosa", type: "Indoor Plants", image: "public/assets/images/monstera_deliciosa.jpg", watering: "Every 5 days" },
+   
+    { name: "Snake Plant", type: "Indoor Plants", image: "public/assets/images/snake_plant.webp", watering: "Every 10 days" },
+    
+    { name: "Epipremnum Aureum", type: "Indoor Plants", image: "public/assets/images/epipremnum_aureum.jpg", watering: "Every 5 days" },
+    
+    { name: "Orchid", type: "Flowering Plants", image: "public/assets/images/orchid.jpeg", watering: "Every 6 days" },
+    
+    { name: "Lavender", type: "Herbs & Succulents", image: "public/assets/images/lavender.jpg", watering: "Every 4 days" }, 
+    
+    { name: "Hibiscus", type: "Flowering Plants", image: "public/assets/images/hibiscus.webp", watering: "Every 3 days" },
+    
+    { name: "Peace Lily", type: "Indoor Plants", image: "public/assets/images/peace_lily.jpg", watering: "Every 4 days" },
+    
+    { name: "Rosemary", type: "Herbs & Succulents", image: "public/assets/images/rosemary.avif", watering: "Every 2 days" }, 
+    
+    { name: "Panda Plant", type: "Herbs & Succulents", image: "public/assets/images/panda_plant.png", watering: "Every 10 days" }, 
+    
+    { name: "ZZ Plant", type: "Indoor Plants", image: "public/assets/images/zz_plant.jpg", watering: "Every 14 days" },
+    
+    { name: "Bougainvillea", type: "Outdoor Plants", image: "public/assets/images/bougainvillea.webp", watering: "Every 3 days" }
 ];
 
 //Define watering schedules (derived from plants) 
