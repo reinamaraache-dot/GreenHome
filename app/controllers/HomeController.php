@@ -1,20 +1,46 @@
 <?php
+require_once ROOT_PATH . 'app/controllers/BaseController.php';
 
-//require_once ROOT_PATH . 'app/models/Database.php'; 
-require_once ROOT_PATH . 'app/models/Plant.php';
+require_once ROOT_PATH . 'app/models/PlantModel.php';
 
-class HomeController {
+
+class HomeController extends BaseController {
+    
+    private $plantModel;
+
+    public function __construct() {
+        $this->plantModel = new PlantModel();
+    }
+    
     public function index() {
-        //$db = new Database();
-        //$conn = $db->connect(); 
-        $plantModel = new Plant();
-        $plants = $plantModel->getAllPlants(); 
+        $data = ['title' => 'Welcome'];
+        $this->view('home', $data);
+    }
+    
+    public function dashboard() {
+        if (!isset($_SESSION['user_id'])) {
+            header('Location: index.php?page=login');
+            exit;
+        }
 
-        //echo "<h1>Database Connection: SUCCESS!</h1>"; 
-
-        require_once ROOT_PATH . 'app/views/home.php'; 
+        $user_id = $_SESSION['user_id'];
+        
+        $plants = $this->plantModel->getPlantsByUserId($user_id);
+        
+        $data = [
+            'title' => 'Dashboard',
+            'plants' => $plants,
+            'username' => $_SESSION['username'] ?? 'User'
+        ];
+        
+        $this->view('dashboard', $data);
+    }
+    
+    public function __call($name, $arguments) {
+        if (isset($_SESSION['user_id'])) {
+            $this->dashboard();
+        } else {
+            $this->index();
+        }
     }
 }
-?>
-
-

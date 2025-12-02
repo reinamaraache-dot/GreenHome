@@ -1,84 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenHome — Smart Plant Management</title>
+<?php 
+require_once ROOT_PATH . 'app/views/header.php'; 
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styleguide.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/layout.css">
+$auth_success = $_SESSION['auth_success'] ?? null;
+unset($_SESSION['auth_success']);
+?>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<div class="container mx-auto p-4 md:p-8">
+    <div class="max-w-xl mx-auto text-center bg-white p-8 rounded-xl shadow-lg border border-green-100">
+        
+        <?php if ($auth_success): ?>
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg relative mb-6" role="alert">
+                <span class="block sm:inline font-semibold"><i class="fas fa-check-circle mr-2"></i> Success!</span>
+                <span class="block sm:inline"><?php echo htmlspecialchars($auth_success); ?></span>
+            </div>
+        <?php endif; ?>
 
-<!-- Header / Navigation -->
-<header class="header" role="banner">
-    <h1 class="logo">GreenHome</h1>
-    <nav class="nav" role="navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="plants.html">Plants</a>
-        <a href="categories.html">Categories</a>
-        <a href="search.html">Search</a>
-        <a href="contact.html">Contact</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="watering.html">Watering Schedule</a>
-    </nav>
-</header>
+        <h1 class="text-5xl font-extrabold text-green-700 mb-4">
+            Welcome to GreenHome
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">
+            Your integrated system for managing and caring for your indoor plants easily and effectively.
+        </p>
 
-<!-- Hero Section -->
-<section class="hero" role="region" aria-label="Hero section">
-    <div class="container">
-        <h2 class="hero-title">Grow. Care. Track.</h2>
-        <p class="hero-subtitle">Organize and manage your outdoor & indoor plants effortlessly.</p>
-        <a class="btn primary" href="plants.html">Get Started</a>
+        <div class="flex justify-center space-x-4 mb-10">
+            <a href="index.php?page=login" class="btn-primary flex items-center shadow-lg">
+                <i class="fas fa-sign-in-alt mr-2"></i> Login
+            </a>
+            <a href="index.php?page=register" class="bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded-lg hover:bg-gray-300 transition duration-300 transform hover:scale-105 shadow-md flex items-center">
+                <i class="fas fa-user-plus mr-2"></i> Register
+            </a>
+        </div>
+
+        <div class="text-left border-t pt-6 border-green-200">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Features</h2>
+            <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                    <i class="fas fa-calendar-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                    <span>Personalized watering schedule reminders.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-chart-line text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                    <span>Track the growth and health of your garden.</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-lock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                    <span>Securely manage your plant inventory.</span>
+                </li>
+            </ul>
+        </div>
     </div>
-</section>
+</div>
 
-<!-- Featured Categories Section -->
-<section class="container" role="region" aria-label="Featured Categories">
-    <h2 class="page-title">Explore Our Categories</h2>
-    <div class="category-grid">
-        <a href="indoor_plants.html" class="category-tile" aria-label="Indoor Plants">
-            <div class="tile-icon">🌿</div>
-            <span class="tile-title">Indoor Plants</span>
-            <span class="tile-desc">Perfect for your living room</span>
-        </a>
-
-        <a href="outdoor_plants.html" class="category-tile" aria-label="Outdoor Plants">
-            <div class="tile-icon">🌲</div>
-            <span class="tile-title">Outdoor Plants</span>
-            <span class="tile-desc">Beautify your garden</span>
-        </a>
-
-        <a href="herbs_plants.html" class="category-tile" aria-label="Herbs & Succulents">
-            <div class="tile-icon">🌵</div>
-            <span class="tile-title">Herbs & Succulents</span>
-            <span class="tile-desc">Low maintenance & aromatic</span>
-        </a>
-
-        <a href="flowering_plants.html" class="category-tile" aria-label="Flowering Plants">
-            <div class="tile-icon">🌸</div>
-            <span class="tile-title">Flowering Plants</span>
-            <span class="tile-desc">Add color to your life</span>
-        </a>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer" role="contentinfo">
-    <p>© 2025 GreenHome — Smart Plant Management</p>
-</footer>
-
-<!-- Scripts -->
-<script src="js/ui.js"></script>
-<script src="js/script.js"></script>
-
-</body>
-</html>
+<?php 
+require_once ROOT_PATH . 'app/views/footer.php'; 
+?>
